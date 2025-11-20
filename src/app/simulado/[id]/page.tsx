@@ -1,0 +1,1 @@
+  const questions: Question[] = simulado.questoes.map((q: any) => ({\n    ...q,\n    correctAnswer: typeof q.correctAnswer === 'string' \n      ? q.correctAnswer.charCodeAt(0) - 65 \n      : q.correctAnswer\n  }));
