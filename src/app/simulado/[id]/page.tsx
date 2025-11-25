@@ -1,1 +1,6 @@
-  const questions: Question[] = simulado.questoes.map((q: any) => ({\n    ...q,\n    correctAnswer: typeof q.correctAnswer === 'string' \n      ? q.correctAnswer.charCodeAt(0) - 65 \n      : q.correctAnswer\n  }));
+import { PageProps } from '@/types';
+
+export default async function SimuladoPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  // resto do código...
+}
